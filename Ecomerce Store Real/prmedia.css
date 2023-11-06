@@ -1,0 +1,130 @@
+@media screen and (max-width: 600px){
+    .mbl-nav{
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        color: black;
+        font-size: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-mbl{
+        display: block;
+      }
+    .desktop-nav{
+  display: none;
+    }
+    .mbl-menue{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 400px;
+        width: 100%;
+        transform: translateX(100%);
+        text-align: center;
+    }
+    .mbl-menue ul li a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    }
+    .mbl-menue ul li{
+        margin-top: 10px;
+    }
+    #menue{
+        transition: ease-in 1s;
+           position: absolute;
+    }
+    .mbl-menue ul{
+        display: block;
+      }
+    .icons{
+        padding-right: 10px;
+    }
+   
+    #cross{
+        display: none;
+    }
+  /* .category-1{
+    display: none;
+  } */
+  .all-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sec-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .section img {
+    height: 261px;
+    width: 100%;
+}
+.cards{
+    flex-direction: column;
+}
+.box-1{
+    width: 100%;
+}
+.card-sec{
+    margin-left: 0px ;
+  }
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 2s;
+    cursor: pointer;
+}
+.content {
+    padding: 1.1rem;
+}
+.title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+.desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #8c5ef7;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.sec-3 img {
+    width: 90%;
+    margin: 22px;
+    height: 150px;
+    /* margin-top: 50px; */
+    /* margin-left: 80px; */
+    border-radius: 20px;
+}
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}

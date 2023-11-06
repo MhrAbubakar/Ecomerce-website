@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.prpl {
+    color: #8543ff;
+}
+
+.order-history-container {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.order-history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-history-item {
+    background-color: #ebebeb;
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px;  
+    padding: 30px;  
+    transition: background-color 0.3s ease;
+}
+
+.order-history-item:hover {
+    background-color: #c7c7c7;
+}
+
+.order-details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; 
+    font-size: 1.3em;  
+}
+
+.order-id {
+    font-weight: bold;
+    color: #333;
+}
+
+.order-date {
+    color: #666;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 150px;  
+    max-height: 150px;  
+    border-radius: 10px;  
+    margin-right: 30px; 
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em;  
+    margin-bottom: 10px; 
+}
+
+.product-quantity {
+    color: #555;
+    font-size: 1.2em; 
+}
+
+.product-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;  
+}
+#backButton {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #9886fc; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#backButton:hover {
+    background-color: #8550ff; 
+}
+/* Style for the order history list */
+#orderHistoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-history-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.order-thumbnail img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.order-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Style for the expanded order details */
+.order-details {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Style for the back button */
+#backButton {
+    display: block;
+    margin-top: 20px;
+}
+/* Style for the container */
+#orderHistoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-history-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1 0 calc(20% - 20px); /* Each item takes 20% of the container width with some margin */
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.order-thumbnail img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.order-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.order-details {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Hide order details by default */
+.order-details {
+    display: none;
+}
+
+/* Show order details when .show-details class is present */
+.order-history-item.show-details .order-details {
+    display: block;
+}
+
+/* Style for the back button */
+#backButton {
+    display: block;
+    margin-top: 20px;
+}

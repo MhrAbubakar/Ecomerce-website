@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="conmedia.css">
+</head>
+<body>
+  <header class="header-mbl">
+    <div class="mbl-nav flex">
+      <div>
+        Fashion Store
+
+      </div>
+      <div class="icons">
+
+        <i onclick="icon(1)" id="hamb" class="fa-solid fa-bars icon-5 " ></i>
+        <i onclick="icon(2)" id="cross"  class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  
+</header>
+<div class="mbl-menue" id="menue">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="log.html">Login</a></li>
+    <li><a href="sign.html">Sign Up</a></li>
+   
+  </ul>
+</div>
+  <nav>
+    <div class="left">Fashion Store</div>
+    <div class="right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="order-history.html">Order History</a></li>
+        <li><a href="log.html" id="loginButton">Login</a></li>
+       
+      </ul>
+    </div>
+    <div class="nav-logo">
+      <a href="sign.html"><i  id="signUser"  class="fa-solid fa-user"></i></a>  
+      <span id="usernameHeader"></span>
+      <li style="list-style: none; cursor: pointer;" ><a id="logoutButon">Logout</a></li>
+       
+    </div>
+  </nav>
+    <div class="container">
+        <div class="box1">
+            <div class="form-container">
+                <div class="logo-container">
+                  Send US Message
+                </div>
+          
+         
+                <div class="line"></div>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="email">Name</label>
+                        <input required="" placeholder="Enter your Name" name="Name" id="name" type="text">
+                      </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required="" placeholder="Enter your email" name="email" id="email" type="text">
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="email">Phone Number</label>
+                    <input required="" name="numer" placeholder="Enter your Number" id="number" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="Message">Message</label>
+                    <input required="" name="Message" placeholder="Enter Message" id="message" type="text">
+                  </div>
+          
+                  <button type="submit" class="form-submit-btn">Send</button>
+                </form>
+          
+            
+              </div>
+        </div>
+    
+    </div>
+
+
+    <div class="container1">
+      <div class="popup" id="popup">
+          <img src="/Pics/404-tick.png" alt="">
+          <h2>Thank You</h2>
+          <p>Logout Sucessfully</p>
+          <button onclick="closep()" >Ok</button>
+      </div>
+    </div>
+
+
+    <script
+    src="https://kit.fontawesome.com/44ac6e7e6e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="mblnav.js"></script>
+<script src="contact.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

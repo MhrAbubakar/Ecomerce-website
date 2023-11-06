@@ -1,0 +1,93 @@
+@media screen and (max-width: 600px){
+    .mbl-nav{
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        color: black;
+        font-size: 20px;
+    }
+    .desktop-nav{
+  display: none;
+    }
+    .mbl-menue{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 400px;
+        width: 100%;
+        transform: translateX(100%);
+        text-align: center;
+        
+    }
+    .mbl-menue ul li a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    }
+    .mbl-menue ul li{
+        margin-top: 10px;
+    }
+    #menue{
+        transition: ease-in 1s;
+           position: absolute;
+    }
+    .mbl-menue ul{
+        display: block;
+      }
+    .icons{
+        padding-right: 10px;
+    }
+   
+    #cross{
+        display: none;
+    }
+    .header-mbl{
+        display: block;
+      }
+    .cards{
+        flex-direction: column;
+    }
+    .box-1{
+        width: 100%;
+    }
+    .card-sec {
+        margin-left: 65px;
+    }
+    .card{
+        max-height: 300px;
+        max-width: 250px;
+    }
+    .sec-2{
+        margin-top: 0;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .sec-3 img {
+        width: 95%;
+       
+        margin: 10px;
+    }
+    .section {
+        min-height: 48vh;
+    }
+    .section img {
+        height: 286px;
+    }
+    .right-sec {
+        margin-top: -248px;
+        margin-left: 20px;
+    }
+    .right-sec h1 {
+        font-size: 26px;
+    }
+    .btn{
+        width: 90px;
+    height: 30px;
+    font-size: 13px;
+    }
+   
+}

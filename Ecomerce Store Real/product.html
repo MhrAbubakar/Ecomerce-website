@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1" />
+  <title>Document</title>
+  <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="prmedia.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@100&family=Kablammo&family=Noto+Serif+Telugu:wght@300;900&family=Poppins:wght@400;700&display=swap");
+  </style>
+  <style>
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-item {
+      flex-basis: 16%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .filter-button {
+      margin: 5px;
+    }
+
+    .shopping-cart {
+      border-radius: 10px;
+      border: 2px solid #cfaaff;
+      padding: 10px;
+      max-width: 300px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  </div>
+  <header class="header-mbl">
+    <div class="mbl-nav flex">
+      <div>
+        Fashion Store
+
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-cart-shopping" onclick="toggleCart()" style="margin-right: 10px;"></i>
+        <i onclick="icon(1)" id="hamb" class="fa-solid fa-bars icon-5 "></i>
+        <i onclick="icon(2)" id="cross" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+  </header>
+  <div class="mbl-menue" id="menue">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="log.html">Login</a></li>
+      <li><a href="sign.html">Sign Up</a></li>
+
+
+    </ul>
+  </div>
+  <header>
+    <nav class="desktop-nav">
+      <div class="left">Fashion Store</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="order-history.html">Order History</a></li>
+          <li><a href="log.html" id="loginButton">Login</a></li>
+        </ul>
+      </div>
+      <div class="nav-logo">
+       <a href="cart.html"> <i id="cartIcon" class="fa-solid fa-cart-shopping cart-icon" onclick="toggleCart()"></i></a>
+        
+        
+        <a href="sign.html"><i id="signUser" class="fa-solid fa-user"></i></a>
+        <span id="usernameHeader"></span>
+        <li style="list-style: none; cursor: pointer;"><a id="logoutButon">Logout</a></li>
+      </div>
+    </nav>
+  </header>
+  <div class="section">
+    <div class="left-sec">
+      <img src="./Pics/banner 2.jpg" alt="" />
+    </div>
+    <div class="category-1">
+      <h1>Categories</h1>
+      <div class="filter-buttons">
+        <button class="filter-button "data-category="all" onclick="filterProducts('all')">All</button>
+        <button class="filter-button "data-category="electronics" onclick="filterProducts('electronics')">Electronics</button>
+        <button class="filter-button "data-category="clothing" onclick="filterProducts('clothing')">Perfume</button>
+        <button  class="filter-button "data-category="Man" onclick="filterProducts('Man')">Man</button>
+        <button class="filter-button "data-category="Women" onclick="filterProducts('Women')">Women</button>
+      </div>
+     <input class="search-input" id="searchInput" type="text" placeholder="Search anything">
+
+      <div class="product-gallery" id="productGallery">
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="itemNotFound" style="display: none;">Item not found.</div>
+
+  </div>
+  </div>
+  <div class="sec-3">
+    <img src="/Pics/new arrival (2).png" alt="">
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container1">
+    <div class="popup" id="popup">
+      <img src="/Pics/404-tick.png" alt="">
+      <h2>Thank You</h2>
+      <p>Logout Sucessfully</p>
+      <button onclick="closep()">Ok</button>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/44ac6e7e6e.js" crossorigin="anonymous"></script>
+  <script src="product.js"></script>
+  <script src="./main.js"></script>
+  <script src="mblnav.js"></script>
+  <script src="index.js"></script>
+  <script src="cart.js"></script>
+</body>
+
+</html>

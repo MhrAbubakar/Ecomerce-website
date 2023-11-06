@@ -1,0 +1,92 @@
+@media screen and (max-width: 600px){
+    .mbl-nav{
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        color: black;
+        font-size: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .header-mbl{
+        display: block;
+      }
+    .desktop-nav{
+  display: none;
+    }
+    .mbl-menue{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 400px;
+        width: 100%;
+        transform: translateX(100%);
+        text-align: center;
+        display: block;
+    }
+    .mbl-menue ul li a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    }
+    .mbl-menue ul li{
+        margin-top: 10px;
+        list-style: none;
+    }
+    .form-container .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 60px;
+        width: 350px;
+    }
+    .form-container .form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    .form-container .form-submit-btn{
+        width: 20%;
+    }
+    .form-container .forgot-password-link {
+        align-self: flex-end;
+        margin-top: -5px;
+        margin-right: 40px;
+    }
+    .form-container .signup-link {
+        align-self: center;
+        font-weight: 500;
+        width: 146px;
+        text-align: center;
+        margin: auto;
+    }
+    .box2{
+        display: none;
+    }
+    .box1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    #menue{
+        transition: ease-in 1s;
+           position: absolute;
+    }
+    .mbl-menue ul{
+        display: block;
+      }
+    .icons{
+        padding-right: 10px;
+    }
+   
+    #cross{
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="product_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="product.html" class="quantityButton">Back to Products</a>
+    </div>
+ <div class="product-detail">
+    <img src="" alt="Product Image" id="productImage">
+    <h1 id="productName"></h1>
+    <p id="productPrice"></p>
+    <div class="description">
+        <h2>Description</h2>
+        <p id="productDescription"></p>
+    </div>
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-form">
+          <input  type="text" id="username" placeholder="Your Name" required>
+<textarea id="review" placeholder="Write a review" required></textarea>
+
+<div class="star-input">
+<span class="fa fa-star" data-rating="1"></span>
+<span class="fa fa-star" data-rating="2"></span>
+<span class="fa fa-star" data-rating="3"></span>
+<span class="fa fa-star" data-rating="4"></span>
+<span class="fa fa-star" data-rating="5"></span>
+<input type="hidden" id="rating" value="0">
+</div>
+
+<button onclick="submitReview()">Submit Review</button>
+</div>
+<div class="review-list" id="reviewList"></div>
+</div>
+
+          
+
+    <script src="product_detail.js"></script>
+</body>
+
+</html>
